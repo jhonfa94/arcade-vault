@@ -27,3 +27,7 @@ No test runner is configured yet.
 - Tailwind is wired through a Turbopack loader rule (`@tailwindcss/turbopack` on `*.css`) rather than a PostCSS config. Theme tokens live in `app/globals.css` via `@theme inline` (CSS variables `--background`/`--foreground`, Geist fonts from `next/font/google`).
 - Route props use Next's generated global helper types (e.g. `LayoutProps<"/">`), generated into `.next/types` during dev/build.
 - Path alias: `@/*` maps to the repo root.
+
+## Skills
+
+Usa siempre /frontend-design para diseñar interfaces de uusario
