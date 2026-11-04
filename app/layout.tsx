@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { Courier_Prime, JetBrains_Mono, Press_Start_2P } from "next/font/google";
+import { Courier_Prime, JetBrains_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { Nav } from "@/components/nav";
 import { SessionProvider } from "@/components/session-provider";
 import "./globals.css";
 
-const pressStart = Press_Start_2P({
+// Press Start 2P va en local: el archivo que descarga next/font/google tiene
+// métricas distintas al de Google Fonts y ensancha los textos del template.
+const pressStart = localFont({
+  src: "./fonts/press-start-2p-latin.woff2",
   variable: "--font-press-start",
   weight: "400",
-  subsets: ["latin"],
   display: "swap",
 });
 
