@@ -366,6 +366,10 @@
   .chip:hover:not(.active) { color: var(--ink); }
 
   /* ===== grid + cards ===== */
+  /* Estado "NO HAY RESULTADOS": en el template iba con estilos inline. */
+  .av-empty { grid-column: 1 / -1; text-align: center; padding: 80px; color: var(--ink-faint); }
+  .av-empty .pixel { font-size: 14px; color: var(--magenta); margin-bottom: 12px; }
+
   .av-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
